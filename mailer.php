@@ -27,8 +27,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $sendMail = isset($_POST['sendMail']) ? $_POST['sendMail'] : false;
 
 
-     // Se la checkbox è selezionata, procedi con l'invio dell'email
-     if ($sendMail) {
+    // Se la checkbox è selezionata, procedi con l'invio dell'email
+    if ($sendMail) {
         // Crea un'istanza di PHPMailer
         $mail = new PHPMailer(true);
 
