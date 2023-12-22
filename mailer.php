@@ -3,8 +3,13 @@
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
+use Dotenv\Dotenv;
 
 require 'vendor/autoload.php';
+
+// Carica variabili d'ambiente da .env
+$dotenv = Dotenv::createImmutable(__DIR__);
+$dotenv->load();
 
 // Avvia la sessione
 session_start();
@@ -59,7 +64,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <body>
             <h1>Mail del cliente</h1>
                 <p>Telefono: $telephone; </p>
-                <p>Il cliente vorrebbe essere contattato attraverso: $contact</p>;
+                <p>Il cliente vorrebbe essere contattato attraverso: $contact;</p>
             </body>
 
             END;
