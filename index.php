@@ -9,7 +9,7 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="./mailer.php" method="post">
+    <form action="./mailertwo.php" method="post">
         
         <input 
             type="email" 

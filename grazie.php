@@ -7,5 +7,5 @@
 </head>
 <body>
     <h1>la mail è stata inviata con successo</h1>
-    <a href="./mail.php">Ritorna al form</a>
+    <a href="./index.php">Ritorna al form</a>
 </body>
